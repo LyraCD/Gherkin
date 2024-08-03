@@ -7,9 +7,7 @@ E escolher quantidade
 Para inserir no carrinho 
 
 Esquema do Cenário: Selecionar opções 
-Dado eu digitar <tamanho>
-E <cor>
-E <quantidade>
+Quando escolher <tamanho>, <cor> e <quantidade>
 Então deve exibir a <mensagem> "Inserido no carrinho" se a <quantidade> for menor que 10 ou exibir a <mensagem> "quantidade inválida" se for maior que 10
 |"tamanho"|"cor"|"quantidade"|"mensagem"|
 |"Médio"|"Azul"|"5"|"Inserido no carrinho"|
@@ -21,7 +19,5 @@ Então deve exibir a <mensagem> "Inserido no carrinho" se a <quantidade> for men
 
 Cenário: Reiniciar a página 
 Quando eu clicar em <limpar>
-Então as opções <tamanho>
-E <quantidade>
-E <cor>
+Então as opções <tamanho>, <cor> e <quantidade>
 Devem ser zeradas 
